@@ -1,0 +1,17 @@
+<section class="card">
+  <figure class="pets">
+    <h3>{{ pet.breed }}</h3>
+    <div>
+      <p>Tipo de mascota: {{ pet.tipomascota }}</p>
+    </div>
+    <div class="imagen">
+      <img src="{{ pet.picture }}" alt="{{ pet.breed }}" />
+    </div>
+    <p><span>Carácter:</span> {{ pet.caracter }}</p>
+    <p><span>Tipo de pelo: </span>{{ pet.hair_type }}</p>
+    <p><span>Tamaño:</span> {{ pet.size }}</p>
+    <p><span>Peso: </span>{{ pet.weight }}</p>
+
+    <button (click)="editPet(pet)">Editar {{ pet.breed }}</button>
+  </figure>
+</section>
