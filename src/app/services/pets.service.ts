@@ -38,34 +38,34 @@ export class PetsService {
   }
 
   public getPets() {
-    return this.httpClient.get('http://localhost:8002/pets');
+    return this.httpClient.get('https://back-pets-frandl92.vercel.app/pets');
   }
   public getCats() {
-    return this.httpClient.get('http://localhost:8002/cats');
+    return this.httpClient.get('https://back-pets-frandl92.vercel.app/cats');
   }
   public postPet(newPet: any) {
-    return this.httpClient.post('http://localhost:8002/pets', newPet);
+    return this.httpClient.post('https://back-pets-frandl92.vercel.app/pets', newPet);
   }
   public postCat(newCat: any) {
-    return this.httpClient.post('http://localhost:8002/cats', newCat);
+    return this.httpClient.post('https://back-pets-frandl92.vercel.app/cats', newCat);
   }
   public patchPet(petID: any, editedPet: any) {
     return this.httpClient.patch(
-      'http://localhost:8002/pets/' + petID,
+      'https://back-pets-frandl92.vercel.app/pets/' + petID,
       editedPet
     );
   }
   public patchCat(catID: any, editedCat: any) {
     return this.httpClient.patch(
-      'http://localhost:8002/cats/' + catID,
+      'https://back-pets-frandl92.vercel.app/cats/' + catID,
       editedCat
     );
   }
 
   public deletePet(petID: any) {
-    return this.httpClient.delete('http://localhost:8002/pets/' + petID);
+    return this.httpClient.delete('https://back-pets-frandl92.vercel.app/pets/' + petID);
   }
   public deleteCat(petID: any) {
-    return this.httpClient.delete('http://localhost:8002/cats/' + petID);
+    return this.httpClient.delete('https://back-pets-frandl92.vercel.app/cats/' + petID);
   }
 }
